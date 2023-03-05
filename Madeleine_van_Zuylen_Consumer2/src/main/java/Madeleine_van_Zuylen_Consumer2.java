@@ -70,7 +70,7 @@ public class Madeleine_van_Zuylen_Consumer2 {
   public static void main(String[] argv) throws Exception {
     CountDownLatch completed = new CountDownLatch(NUMTHREADS);
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("54.185.234.125");
+    factory.setHost("35.89.78.12");
     //factory.setHost("localhost");
     Connection connection = factory.newConnection();
     for (int i = 0; i < NUMTHREADS; i++) {

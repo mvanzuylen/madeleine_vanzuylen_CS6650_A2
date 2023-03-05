@@ -24,7 +24,7 @@ public class TwinderServlet extends HttpServlet {
   public Connection connection;
   public RMQChannelPool pool;
   //String HOSTNAME = "localhost";
-  String HOSTNAME = "54.185.234.125";
+  String HOSTNAME = "35.89.78.12";
   String USERNAME = "guest";
   String PASSWORD = "guest";
   Integer PORT = 5672;

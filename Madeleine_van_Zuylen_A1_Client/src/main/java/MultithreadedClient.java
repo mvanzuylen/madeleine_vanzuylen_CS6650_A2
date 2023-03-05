@@ -18,10 +18,11 @@ import java.util.stream.Stream;
 
 public class MultithreadedClient {
 
-  final static private int NUMTHREADS = 100;
-  private static int NUMPOSTS = 5000; //500000
-  private static String url = "http://34.214.111.249:8080/Madeleine_van_Zuylen_A1_war/twinder";
-  //private static String url = "http://localhost:8080/Madeleine_van_Zuylen_A1_war_exploded/twinder/";
+  final static private int NUMTHREADS = 100; //100
+  private static int NUMPOSTS = 500000; //500000
+  private static String url = "http://35.163.67.34:8080/Madeleine_van_Zuylen_A1_war/twinder"; // One servlet
+  //private static String url = "http://mvz-alb-1104176885.us-west-2.elb.amazonaws.com:8080/Madeleine_van_Zuylen_A1_war/twinder"; // Load Balancer
+  //private static String url = "http://localhost:8080/Madeleine_van_Zuylen_A1_war_exploded/twinder/"; // Localhost
   private static AtomicInteger numSuccessfulRequests = new AtomicInteger(0);
   private static AtomicInteger numUnSuccessfulRequests = new AtomicInteger(0);
   private static String postCsv = "posts.csv";
